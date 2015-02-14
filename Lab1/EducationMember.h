@@ -12,7 +12,7 @@
 #import "Student.h"
 #import "DeportamentDirector.h"
 #import "Teacher.h"
-#import "Deportament"
+#import "Deportament.h"
 
 @protocol EducationMember <NSObject>
 

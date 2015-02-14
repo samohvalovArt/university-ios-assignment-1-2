@@ -11,7 +11,7 @@
 
 #import "Human.h"
 
-@interface Student : Human
+@interface Student : Human 
 
 @property (assign) float average;
 

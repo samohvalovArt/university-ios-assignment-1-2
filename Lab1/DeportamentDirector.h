@@ -9,12 +9,14 @@
 #ifndef Lab1_DeportamentDirector_h
 #define Lab1_DeportamentDirector_h
 
-
 #import "Human.h"
+#import "Deportament.h"
 
 @interface DeportamentDirector : Human
 
 @property (assign) (float) salaryRate;
+
+@property (weak) Deportament *deportament;
 
 @end
 

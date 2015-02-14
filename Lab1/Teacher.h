@@ -11,10 +11,12 @@
 
 
 #import "Human.h"
+#import "EducationMember.h"
 
-@interface Teacher : Human
+@interface Teacher : Human <EducationMember>
 
 @property (assign) NSNumber *standing;
+@property (nonatomic) NSMutableArray *students;
 
 @end
 
