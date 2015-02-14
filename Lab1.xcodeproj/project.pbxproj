@@ -30,6 +30,7 @@
 		84DC95291A8FA9CF008B8FDE /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		84DC952A1A8FAAD9008B8FDE /* DeportamentDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeportamentDirector.h; sourceTree = "<group>"; };
 		84DC952B1A8FAC1D008B8FDE /* Deportament.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deportament.h; sourceTree = "<group>"; };
+		84DC952C1A8FB3F9008B8FDE /* EducationMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationMember.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				84DC95291A8FA9CF008B8FDE /* Teacher.h */,
 				84DC952A1A8FAAD9008B8FDE /* DeportamentDirector.h */,
 				84DC952B1A8FAC1D008B8FDE /* Deportament.h */,
+				84DC952C1A8FB3F9008B8FDE /* EducationMember.h */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -242,6 +244,7 @@
 				84DC95261A8FA830008B8FDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
