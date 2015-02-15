@@ -12,9 +12,7 @@
 #import "Human.h"
 #import "Deportament.h"
 
-@interface DeportamentDirector : Human
-
-@property (assign) (float) salaryRate;
+@interface DeportamentDirector : NSObject
 
 @property (weak) Deportament *deportament;
 

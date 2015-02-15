@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84DC95211A8FA830008B8FDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC95201A8FA830008B8FDE /* main.m */; };
+		84DC953C1A8FD487008B8FDE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC953B1A8FD487008B8FDE /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,9 @@
 		84DC95281A8FA8C2008B8FDE /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		84DC95291A8FA9CF008B8FDE /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		84DC952A1A8FAAD9008B8FDE /* DeportamentDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeportamentDirector.h; sourceTree = "<group>"; };
-		84DC952B1A8FAC1D008B8FDE /* Deportament.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deportament.h; sourceTree = "<group>"; };
 		84DC952C1A8FB3F9008B8FDE /* EducationMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationMember.h; sourceTree = "<group>"; };
+		84DC953B1A8FD487008B8FDE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		84DC95541A905984008B8FDE /* Deportament.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deportament.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,9 @@
 				84DC95281A8FA8C2008B8FDE /* Student.h */,
 				84DC95291A8FA9CF008B8FDE /* Teacher.h */,
 				84DC952A1A8FAAD9008B8FDE /* DeportamentDirector.h */,
-				84DC952B1A8FAC1D008B8FDE /* Deportament.h */,
 				84DC952C1A8FB3F9008B8FDE /* EducationMember.h */,
+				84DC953B1A8FD487008B8FDE /* Student.m */,
+				84DC95541A905984008B8FDE /* Deportament.h */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DC95211A8FA830008B8FDE /* main.m in Sources */,
+				84DC953C1A8FD487008B8FDE /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

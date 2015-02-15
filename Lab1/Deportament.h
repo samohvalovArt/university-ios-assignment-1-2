@@ -9,5 +9,8 @@
 #ifndef Lab1_Deportament_h
 #define Lab1_Deportament_h
 
+@interface Deportament : NSObject
+
+@end
 
 #endif
