@@ -22,6 +22,7 @@
     [self.students addObject:_newStudent];
 }
 
-
-
+-(NSString*) description{
+    return [NSString stringWithFormat: @"Teacher : %@, Age : %@, Standing: %@", self.fullname, self.age, self.standing];
+}
 @end

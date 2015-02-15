@@ -13,7 +13,7 @@
 #import "Human.h"
 #import "EducationMember.h"
 
-@interface DeportamentDirector : NSObject <EducationMember>
+@interface DeportamentDirector : Human <EducationMember>
 
 @property (assign) float salaryRate;
 

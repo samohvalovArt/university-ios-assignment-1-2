@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Deportament.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        Deportament *firstObject = [[Deportament alloc] init];
         
+        NSLog(@"%@",[firstObject description]);
         
         NSLog(@"Hello, World!");
     }

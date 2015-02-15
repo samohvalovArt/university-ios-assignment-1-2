@@ -34,4 +34,8 @@
     self.director = _newDepDirector;
 }
 
+-(NSString*) description{
+    return [NSString stringWithFormat: @"Deportament : %@, Director : %@", self.name, [self.director fullname]];
+}
+
 @end

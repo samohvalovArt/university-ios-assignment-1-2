@@ -14,6 +14,12 @@
 @property (assign) NSString *fullname;
 @property (assign) NSNumber *age;
 
++(instancetype) createNewWithFullName:(NSString*) _fullName
+                                  Age:(NSNumber*) _age;
+
+-(instancetype) initWithFullName:(NSString*) _fullName
+                             Age:(NSNumber*) _age;
+
 @end
 
 

@@ -11,6 +11,8 @@
 		84DC95591A90616A008B8FDE /* Deportament.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC95581A90616A008B8FDE /* Deportament.m */; };
 		84DC955B1A9062B9008B8FDE /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC955A1A9062B9008B8FDE /* Teacher.m */; };
 		84DC955D1A9067C1008B8FDE /* DeportamentDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC955C1A9067C1008B8FDE /* DeportamentDirector.m */; };
+		84DC955F1A90AF17008B8FDE /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC955E1A90AF17008B8FDE /* Human.m */; };
+		84DC95611A90B4CB008B8FDE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC95601A90B4CB008B8FDE /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		84DC95581A90616A008B8FDE /* Deportament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deportament.m; sourceTree = "<group>"; };
 		84DC955A1A9062B9008B8FDE /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		84DC955C1A9067C1008B8FDE /* DeportamentDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeportamentDirector.m; sourceTree = "<group>"; };
+		84DC955E1A90AF17008B8FDE /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		84DC95601A90B4CB008B8FDE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				84DC95581A90616A008B8FDE /* Deportament.m */,
 				84DC955A1A9062B9008B8FDE /* Teacher.m */,
 				84DC955C1A9067C1008B8FDE /* DeportamentDirector.m */,
+				84DC955E1A90AF17008B8FDE /* Human.m */,
+				84DC95601A90B4CB008B8FDE /* Student.m */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -141,8 +147,10 @@
 			files = (
 				84DC955B1A9062B9008B8FDE /* Teacher.m in Sources */,
 				84DC95211A8FA830008B8FDE /* main.m in Sources */,
+				84DC955F1A90AF17008B8FDE /* Human.m in Sources */,
 				84DC95591A90616A008B8FDE /* Deportament.m in Sources */,
 				84DC955D1A9067C1008B8FDE /* DeportamentDirector.m in Sources */,
+				84DC95611A90B4CB008B8FDE /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

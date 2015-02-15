@@ -11,6 +11,8 @@
 
 @implementation DeportamentDirector
 
-
+-(NSString*) description{
+    return [NSString stringWithFormat: @"DepDirector : %@, Age : %@, SalaryRate: %f", self.fullname, self.age, self.salaryRate];
+}
 
 @end

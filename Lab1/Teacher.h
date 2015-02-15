@@ -13,7 +13,7 @@
 #import "Human.h"
 #import "EducationMember.h"
 
-@interface Teacher : NSObject <EducationMember>
+@interface Teacher : Human <EducationMember>
 
 @property (assign) NSNumber *standing;
 
