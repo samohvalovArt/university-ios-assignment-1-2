@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Deportament.h"
+#import "Student.h"
 
 @implementation Deportament
 
@@ -24,6 +25,7 @@
 
 -(void) addStudent:(id)_newStudent{
     [self.students addObject:_newStudent];
+    [_newStudent addAvgObserver:self];
 }
 
 -(void) addTeacher:(id)_newTeacher{
@@ -36,6 +38,24 @@
 
 -(NSString*) description{
     return [NSString stringWithFormat: @"Deportament : %@, Director : %@", self.name, [self.director fullname]];
+}
+
+-(double) calcStudentsAverage{
+    
+    double result = 0.0;
+    
+    if ([self.students count] != 0){
+        for(Student *student in self.students){
+            result += student.average;
+        }
+        result = result / [self.students count];
+    }
+    
+    return result;
+}
+
+-(void) reCalcAverage{
+    self.studentsAverage = [self calcStudentsAverage];
 }
 
 @end

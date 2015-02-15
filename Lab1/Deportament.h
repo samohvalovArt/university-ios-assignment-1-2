@@ -11,14 +11,18 @@
 
 #import "DeportamentDirector.h"
 #import "EducationMember.h"
+#import "StudentAvgObserver.h"
 
-@interface Deportament : NSObject <EducationMember>
+@interface Deportament : NSObject <EducationMember, StudentAvgObserver>
 
 @property (assign) NSString *name;
+@property (assign) double studentsAverage;
 
 @property (strong) DeportamentDirector *director;
 @property (nonatomic) NSMutableArray *students;
 @property (nonatomic) NSMutableArray *teachers;
+
+-(double) calcStudentsAverage;
 
 @end
 

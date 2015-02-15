@@ -10,10 +10,13 @@
 #define Lab1_Student_h
 
 #import "Human.h"
+#import "StudentAvgObserver.h"
 
 @interface Student : Human
 
-@property (assign) float average;
+@property (nonatomic, assign) float average;
+
+-(void) addAvgObserver:(id<StudentAvgObserver>) _observer;
 
 @end
 
