@@ -17,6 +17,13 @@
 
 @implementation Student
 
+-(instancetype) init{
+    self = [super init];
+    self.avgObservers = [[NSMutableArray alloc] init];
+    
+    return self;
+}
+
 -(NSString*) description{
     return [NSString stringWithFormat: @"Student : %@, Age : %@, Average: %f", self.fullname, self.age, self.average];
 }
@@ -26,7 +33,7 @@
 }
 
 -(void) setAverage:(float) value{
-    self.average = value;
+    _average = value;
     if ([self.avgObservers count] != 0)
             for(id<StudentAvgObserver> observer in self.avgObservers)
                 [observer reCalcAverage];

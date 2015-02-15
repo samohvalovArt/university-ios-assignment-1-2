@@ -37,7 +37,7 @@
 }
 
 -(NSString*) description{
-    return [NSString stringWithFormat: @"Deportament : %@, Director : %@", self.name, [self.director fullname]];
+    return [NSString stringWithFormat: @"Deportament : %@, Director : %@, StudentAverage : %f", self.name, [self.director fullname], self.studentsAverage];
 }
 
 -(double) calcStudentsAverage{

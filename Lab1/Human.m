@@ -18,6 +18,8 @@
 
 -(instancetype) initWithFullName:(NSString *)_fullName Age:(NSNumber *)newAge{
     
+    self = [self init];
+    
     self.fullname = _fullName;
     self.age = newAge;
     
