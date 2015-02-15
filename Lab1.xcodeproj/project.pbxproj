@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		84DC95211A8FA830008B8FDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC95201A8FA830008B8FDE /* main.m */; };
-		84DC95571A905C47008B8FDE /* DeportamentDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC95561A905C47008B8FDE /* DeportamentDirector.m */; };
+		84DC95591A90616A008B8FDE /* Deportament.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC95581A90616A008B8FDE /* Deportament.m */; };
+		84DC955B1A9062B9008B8FDE /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC955A1A9062B9008B8FDE /* Teacher.m */; };
+		84DC955D1A9067C1008B8FDE /* DeportamentDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC955C1A9067C1008B8FDE /* DeportamentDirector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +34,9 @@
 		84DC952A1A8FAAD9008B8FDE /* DeportamentDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeportamentDirector.h; sourceTree = "<group>"; };
 		84DC952B1A8FAC1D008B8FDE /* Deportament.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deportament.h; sourceTree = "<group>"; };
 		84DC95551A905BAC008B8FDE /* EducationMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationMember.h; sourceTree = "<group>"; };
-		84DC95561A905C47008B8FDE /* DeportamentDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeportamentDirector.m; sourceTree = "<group>"; };
+		84DC95581A90616A008B8FDE /* Deportament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deportament.m; sourceTree = "<group>"; };
+		84DC955A1A9062B9008B8FDE /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		84DC955C1A9067C1008B8FDE /* DeportamentDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeportamentDirector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,9 @@
 				84DC952A1A8FAAD9008B8FDE /* DeportamentDirector.h */,
 				84DC952B1A8FAC1D008B8FDE /* Deportament.h */,
 				84DC95551A905BAC008B8FDE /* EducationMember.h */,
-				84DC95561A905C47008B8FDE /* DeportamentDirector.m */,
+				84DC95581A90616A008B8FDE /* Deportament.m */,
+				84DC955A1A9062B9008B8FDE /* Teacher.m */,
+				84DC955C1A9067C1008B8FDE /* DeportamentDirector.m */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -133,8 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DC955B1A9062B9008B8FDE /* Teacher.m in Sources */,
 				84DC95211A8FA830008B8FDE /* main.m in Sources */,
-				84DC95571A905C47008B8FDE /* DeportamentDirector.m in Sources */,
+				84DC95591A90616A008B8FDE /* Deportament.m in Sources */,
+				84DC955D1A9067C1008B8FDE /* DeportamentDirector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

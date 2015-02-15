@@ -17,8 +17,6 @@
 
 @property (assign) float salaryRate;
 
-@property (nonatomic) NSMutableArray *students;
-
 @end
 
 #endif

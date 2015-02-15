@@ -9,12 +9,12 @@
 #ifndef Lab1_EducationMember_h
 #define Lab1_EducationMember_h
 
-#import "Student.h"
-
 @protocol EducationMember <NSObject>
 
 @optional
--(void) addStudent:(Student*) _newStudent;
+-(void) addStudent:(id) _newStudent;
+-(void) addTeacher:(id) _newTeacher;
+-(void) setDeportamentDirector:(id) _newDepDirector;
 
 @end
 

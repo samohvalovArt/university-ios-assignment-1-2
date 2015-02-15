@@ -9,9 +9,16 @@
 #ifndef Lab1_Deportament_h
 #define Lab1_Deportament_h
 
-@interface Deportament : NSOobject
+#import "DeportamentDirector.h"
+#import "EducationMember.h"
 
-@property (assign) NSStrign *name;
+@interface Deportament : NSObject <EducationMember>
+
+@property (assign) NSString *name;
+
+@property (strong) DeportamentDirector *director;
+@property (nonatomic) NSMutableArray *students;
+@property (nonatomic) NSMutableArray *teachers;
 
 @end
 
