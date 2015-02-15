@@ -12,7 +12,7 @@
 
 #import "Human.h"
 
-@interface Teacher : Human
+@interface Teacher : NSObject
 
 @property (assign) NSNumber *standing;
 

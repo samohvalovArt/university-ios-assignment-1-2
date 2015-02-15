@@ -11,10 +11,13 @@
 
 
 #import "Human.h"
+#import "EducationMember.h"
 
-@interface DeportamentDirector : Human
+@interface DeportamentDirector : NSObject <EducationMember>
 
-@property (assign) (float) salaryRate;
+@property (assign) float salaryRate;
+
+@property (nonatomic) NSMutableArray *students;
 
 @end
 
