@@ -8,54 +8,45 @@
 
 #import <Foundation/Foundation.h>
 #import "Deportament.h"
+#import "StudentGroup.h"
 #import "Student.h"
+
 
 @implementation Deportament
 
-#import "EducationMember.h"
-#import "EducationMember.h"
-
--(instancetype) init{
-    self = [super init];
-    self.students = [[NSMutableArray alloc] init];
-    self.teachers = [[NSMutableArray alloc] init];
+-(void) addGroup:(StudentGroup *)group{
     
-    return self;
-}
-
--(void) addStudent:(id)_newStudent{
-    [self.students addObject:_newStudent];
-    [_newStudent addAvgObserver:self];
-}
-
--(void) addTeacher:(id)_newTeacher{
-    [self.teachers addObject:_newTeacher];
-}
-
--(void) setDeportamentDirector:(id)_newDepDirector{
-    self.director = _newDepDirector;
-}
-
--(NSString*) description{
-    return [NSString stringWithFormat: @"Deportament : %@, Director : %@, StudentAverage : %f", self.name, [self.director fullname], self.studentsAverage];
-}
-
--(double) calcStudentsAverage{
+    if (!self.groups)
+        self.groups = [[NSMutableSet alloc] init];
     
-    double result = 0.0;
+    [self.groups addObject:group];
+}
+
+-(float) getAvgGradeByStudents{
     
-    if ([self.students count] != 0){
-        for(Student *student in self.students){
-            result += student.average;
+    float result;
+    
+    if ([self.groups count] != 0){
+        
+        for (StudentGroup *group in self.groups){
+            result += group.studentsAvgGrade;
         }
-        result = result / [self.students count];
+        result = result / [self.groups count];
     }
-    
     return result;
 }
 
--(void) reCalcAverage{
-    self.studentsAverage = [self calcStudentsAverage];
+-(void) setDeportamentDirector:(DeportamentDirector *)depDirector{
+    
+    _director = depDirector;
+}
+
+-(void) addTeacher:(DeportamentMember *)teacher{
+    
+    if (!self.teachers)
+        self.teachers = [[NSMutableSet alloc] init];
+    
+    [self.teachers addObject:teacher];
 }
 
 @end

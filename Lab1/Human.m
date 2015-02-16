@@ -11,17 +11,17 @@
 
 @implementation Human
 
-+(instancetype) createNewWithFullName:(NSString *)_fullName Age:(NSNumber *)_age{
++(instancetype) humanWithFullName:(NSString *)fullName age:(NSNumber *)age{
     
-    return [[self alloc] initWithFullName:_fullName Age:_age];
+    return [[self alloc] initWithFullName:fullName age:age];
 }
 
--(instancetype) initWithFullName:(NSString *)_fullName Age:(NSNumber *)newAge{
+-(instancetype) initWithFullName:(NSString *)fullName age:(NSNumber *)age{
     
     self = [self init];
     
-    self.fullname = _fullName;
-    self.age = newAge;
+    self.fullname = fullName;
+    self.age = age;
     
     return self;
 }

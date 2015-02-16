@@ -9,20 +9,25 @@
 #ifndef Lab1_Deportament_h
 #define Lab1_Deportament_h
 
+#import "DeportamentMember.h"
+#import "StudentGroup.h"
 #import "DeportamentDirector.h"
-#import "EducationMember.h"
-#import "StudentAvgObserver.h"
+#import "Teacher.h"
 
-@interface Deportament : NSObject <EducationMember, StudentAvgObserver>
+@interface Deportament : NSObject
 
-@property (assign) NSString *name;
-@property (assign) double studentsAverage;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) double studentsAvgGrade;
 
-@property (strong) DeportamentDirector *director;
-@property (nonatomic) NSMutableArray *students;
-@property (nonatomic) NSMutableArray *teachers;
+@property (nonatomic, weak) DeportamentMember *director;
+@property (nonatomic) NSMutableSet *groups;
+@property (nonatomic) NSMutableSet *teachers;
 
--(double) calcStudentsAverage;
+-(void) setDeportamentDirector:(DeportamentMember*) depDirector;
+-(void) addGroup:(StudentGroup*) group;
+-(void) addTeacher:(DeportamentMember*) teacher;
+
+-(float) getAvgGradeByStudents;
 
 @end
 

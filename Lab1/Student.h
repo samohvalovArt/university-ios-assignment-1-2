@@ -11,12 +11,16 @@
 
 #import "Human.h"
 #import "StudentAvgObserver.h"
+#import "StudentGradeBook.h"
 
 @interface Student : Human
 
-@property (nonatomic, assign) float average;
+@property (nonatomic, assign) float avgGrade;
 
--(void) addAvgObserver:(id<StudentAvgObserver>) _observer;
+-(void) addAvgObserver:(id<StudentAvgObserver>) observer;
+
+-(void) addNewGrade:(NSNumber*) grade
+            subject:(Subject) subject;
 
 @end
 

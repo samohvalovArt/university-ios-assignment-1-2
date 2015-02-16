@@ -11,32 +11,31 @@
 
 @interface Student()
 
-@property (strong) NSMutableArray *avgObservers;
-
+@property (nonatomic, strong) NSMutableSet *avgObservers;
+@property (nonatomic, strong) StudentGradeBook *gradeBook;
 @end
 
 @implementation Student
 
--(instancetype) init{
-    self = [super init];
-    self.avgObservers = [[NSMutableArray alloc] init];
+-(void) addAvgObserver:(id<StudentAvgObserver>)observer{
     
-    return self;
+    if (self.avgObservers == nil)
+        self.avgObservers = [[NSMutableSet alloc] init];
+    
+    [self.avgObservers addObject:observer];
 }
 
--(NSString*) description{
-    return [NSString stringWithFormat: @"Student : %@, Age : %@, Average: %f", self.fullname, self.age, self.average];
-}
-
--(void) addAvgObserver:(id<StudentAvgObserver>)_observer{
-    [self.avgObservers addObject:_observer];
-}
-
--(void) setAverage:(float) value{
-    _average = value;
-    if ([self.avgObservers count] != 0)
-            for(id<StudentAvgObserver> observer in self.avgObservers)
-                [observer reCalcAverage];
+-(void) addNewGrade:(NSNumber*)grade subject:(Subject)subject{
+    
+    if (self.gradeBook == nil)
+        self.gradeBook = [[StudentGradeBook alloc] init];
+    
+    [self.gradeBook addGrade:grade subject:subject];
+    self.avgGrade = [self.gradeBook calculateAvgGrade];
+    
+    if (self.avgObservers != nil && [self.avgObservers count] != 0)
+        for(id<StudentAvgObserver> observer in self.avgObservers)
+            [observer reCalcAverage];
 }
 
 @end

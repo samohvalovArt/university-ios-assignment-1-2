@@ -12,9 +12,8 @@
 @protocol EducationMember <NSObject>
 
 @optional
--(void) addStudent:(id) _newStudent;
--(void) addTeacher:(id) _newTeacher;
--(void) setDeportamentDirector:(id) _newDepDirector;
+-(NSString*) getUniversityTelephone;
+-(NSString*) getUniversityAddress;
 
 @end
 

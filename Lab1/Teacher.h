@@ -9,16 +9,12 @@
 #ifndef Lab1_Teacher_h
 #define Lab1_Teacher_h
 
+#import "DeportamentMember.h"
+#import "StudentGroup.h"
 
-#import "Human.h"
-#import "EducationMember.h"
+@interface Teacher : DeportamentMember
 
-@interface Teacher : Human <EducationMember>
-
-@property (assign) NSNumber *standing;
-
-@property (nonatomic) NSMutableArray *students;
-
+                        
 @end
 
 #endif

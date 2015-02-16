@@ -11,18 +11,9 @@
 
 @implementation Teacher
 
--(instancetype) init{
-    self = [super init];
-    self.students = [[NSMutableArray alloc] init];
-    
-    return self;
-}
-
--(void) addStudent:(id)_newStudent{
-    [self.students addObject:_newStudent];
-}
-
 -(NSString*) description{
+    
     return [NSString stringWithFormat: @"Teacher : %@, Age : %@, Standing: %@", self.fullname, self.age, self.standing];
+    
 }
 @end
