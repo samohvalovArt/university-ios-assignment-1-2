@@ -12,13 +12,15 @@
 #import "DeportamentDirector.h"
 #import "StudentGroup.h"
 #import "Student.h"
+#import "University.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        University *university = [University sharedInstance];
         
-        /*
         Deportament *histDeportament = [[Deportament alloc] init];
+        [university addDeportament:histDeportament];
         DeportamentDirector *histDepDirector = [DeportamentDirector humanWithFullName:@"Vasia" age:[NSNumber numberWithInt:23]];
         StudentGroup *firstGroup = [[StudentGroup alloc] init];
         Student *student1 = [Student humanWithFullName:@"Olga" age:[NSNumber  numberWithInt:23]];
@@ -26,10 +28,10 @@ int main(int argc, const char * argv[]) {
         
         [firstGroup addStudent:student1];
         [firstGroup addStudent:student2];
-        
+
         [histDeportament addGroup:firstGroup];
         [histDeportament addTeacher:histDepDirector];
-        histDeportament.director = histDepDirector;
+        [histDeportament setDeportamentDirector:histDepDirector];
         
         [student1 addNewGrade:[NSNumber numberWithFloat:4.5] subject:History];
         [student1 addNewGrade:[NSNumber numberWithFloat:3.9] subject:Mathematics];
@@ -39,7 +41,7 @@ int main(int argc, const char * argv[]) {
         NSLog([NSString stringWithFormat: @"%f",firstGroup.studentsAvgGrade]);
         
         // If student parent want see avgGrade
-        NSLog([NSString stringWithFormat: @"%f",student1.avgGrade]);*/
+        NSLog([NSString stringWithFormat: @"%f",student1.avgGrade]);
     }
     return 0;
 }
