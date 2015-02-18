@@ -16,6 +16,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        
+        /*
         Deportament *histDeportament = [[Deportament alloc] init];
         DeportamentDirector *histDepDirector = [DeportamentDirector humanWithFullName:@"Vasia" age:[NSNumber numberWithInt:23]];
         StudentGroup *firstGroup = [[StudentGroup alloc] init];
@@ -37,7 +39,7 @@ int main(int argc, const char * argv[]) {
         NSLog([NSString stringWithFormat: @"%f",firstGroup.studentsAvgGrade]);
         
         // If student parent want see avgGrade
-        NSLog([NSString stringWithFormat: @"%f",student1.avgGrade]);
+        NSLog([NSString stringWithFormat: @"%f",student1.avgGrade]);*/
     }
     return 0;
 }

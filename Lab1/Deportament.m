@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Deportament.h"
 #import "StudentGroup.h"
-#import "Student.h"
 
+@interface  Deportament()
+
+@property (nonatomic, weak) DeportamentMember *director;
+@property (nonatomic) NSMutableSet *groups;
+@property (nonatomic) NSMutableSet *teachers;
+
+@end
 
 @implementation Deportament
 

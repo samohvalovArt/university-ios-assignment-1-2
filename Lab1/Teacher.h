@@ -12,7 +12,7 @@
 #import "DeportamentMember.h"
 #import "StudentGroup.h"
 
-@interface Teacher : DeportamentMember
+@interface Teacher : DeportamentMember <EducationMember>
 
                         
 @end

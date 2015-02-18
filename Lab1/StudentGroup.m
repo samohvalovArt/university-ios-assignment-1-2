@@ -8,6 +8,12 @@
 
 #import "StudentGroup.h"
 
+@interface  StudentGroup()
+
+@property (nonatomic, strong) NSMutableSet *students;
+
+@end
+
 @implementation StudentGroup
 
 -(void) addStudent:(Student *)student{
@@ -17,6 +23,7 @@
     
     [self.students addObject:student];
     [student addAvgObserver:self];
+    
 }
 
 -(void) reCalcAverage{

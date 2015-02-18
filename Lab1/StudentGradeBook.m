@@ -8,6 +8,12 @@
 
 #import "StudentGradeBook.h"
 
+@interface StudentGradeBook ()
+
+    @property (nonatomic, strong) NSMutableDictionary *subjectsGrade;
+
+@end
+
 @implementation StudentGradeBook
 
 -(void) addGrade:(NSNumber*)grade subject:(Subject)subject{

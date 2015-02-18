@@ -16,9 +16,6 @@ typedef enum Subject
 
 @interface StudentGradeBook : NSObject
 
-
-@property (nonatomic, strong) NSMutableDictionary *subjectsGrade;
-
 -(void) addGrade:(NSNumber*) grade
          subject:(Subject) subject;
 

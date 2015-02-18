@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Student.h"
+#import "StudentGroup.h"
 
 @interface Student()
 
 @property (nonatomic, strong) NSMutableSet *avgObservers;
 @property (nonatomic, strong) StudentGradeBook *gradeBook;
+
 @end
 
 @implementation Student

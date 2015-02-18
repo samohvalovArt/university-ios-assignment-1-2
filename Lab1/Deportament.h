@@ -19,10 +19,6 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) double studentsAvgGrade;
 
-@property (nonatomic, weak) DeportamentMember *director;
-@property (nonatomic) NSMutableSet *groups;
-@property (nonatomic) NSMutableSet *teachers;
-
 -(void) setDeportamentDirector:(DeportamentMember*) depDirector;
 -(void) addGroup:(StudentGroup*) group;
 -(void) addTeacher:(DeportamentMember*) teacher;

@@ -12,8 +12,9 @@
 #import "Human.h"
 #import "StudentAvgObserver.h"
 #import "StudentGradeBook.h"
+#import "EducationMember.h"
 
-@interface Student : Human
+@interface Student : Human <EducationMember>
 
 @property (nonatomic, assign) float avgGrade;
 
